@@ -1,0 +1,12 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+war {
+    baseName = 'smartblog-admin'
+    archiveName = "${baseName}.${extension}"
+
+}
+
+dependencies {
+    compile project(':common')
+}
